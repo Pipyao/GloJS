@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
        };
 
    };
-   const openCart = () => {
+   const openCart = (event) => {
         cart.style.display = 'flex';
+        event.preventDefault();
    };
    
    cartBtn.addEventListener('click', openCart);
